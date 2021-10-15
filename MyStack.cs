@@ -32,8 +32,7 @@ namespace XMLValidatorNS
         /// </summary>
         public void Push(XMLTag tag)
         {
-            
-             
+            stackInternal.Add(tag);
         }
 
         /// <summary> 
