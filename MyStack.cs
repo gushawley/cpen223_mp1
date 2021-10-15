@@ -53,7 +53,7 @@ namespace XMLValidatorNS
         /// </summary>
         public XMLTag Peek()
         {
-            return null; // return a dummy value for now: ToFix
+            return stackInternal[stackInternal.Count - 1]; // return a dummy value for now: ToFix
         }
 
         /// <summary>
