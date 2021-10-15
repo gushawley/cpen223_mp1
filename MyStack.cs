@@ -32,8 +32,7 @@ namespace XMLValidatorNS
         /// </summary>
         public void Push(XMLTag tag)
         {
-            //test
-            //hi
+            
              
         }
 
@@ -43,7 +42,9 @@ namespace XMLValidatorNS
         /// </summary>
         public XMLTag Pop()
         {
-            return null; // return a dummy value for now: ToFix
+            XMLTag temp = stackInternal[stackInternal.Count - 1];
+            stackInternal.RemoveAt(stackInternal.Count - 1);
+            return temp;
         }
 
 
