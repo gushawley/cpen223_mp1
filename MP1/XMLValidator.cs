@@ -13,15 +13,17 @@ namespace XMLValidatorNS
     public class XMLValidator
     {
         //field(s) here
+        private Queue<XMLTag> tags;
 
         public XMLValidator()
         {
-             
+            this.tags = new Queue<XMLTag>();
         }
 
         public XMLValidator(Queue<XMLTag> tags)
         {
-             
+            this.tags = new Queue<XMLTag>(tags.ToArray());
+            
         }
 
         public void AddTag(XMLTag tag)
