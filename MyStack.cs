@@ -62,7 +62,14 @@ namespace XMLValidatorNS
         /// </summary>
         public bool IsEmpty()
         {
-            return false; // return a dummy value for now: ToFix
+            if(stackInternal.Count == 0)
+            {
+                return true
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
