@@ -33,7 +33,7 @@ namespace XMLValidatorNS
 
         public string GetTags() 
         {
-            return null; // return a dummy value for now: ToFix
+            return null; // return a dummy value for now
         }
 
         public void Remove(string element)
