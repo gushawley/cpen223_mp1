@@ -45,7 +45,18 @@ namespace XMLValidatorNS
 
         public void Remove(string element)
         {
- 
+            XMLTag[] tempTags = new XMLTag[tags.Count];
+            tags.CopyTo(tempTags, 0);
+            tags.Clear();
+
+            for(int i = 0; i < tags.Count; i++)
+            {
+                if(tempTags[i].GetElement() != element)
+                {
+                    tags.Enqueue(tempTags[i]);
+                }
+            }
+
         }
 
         public void Validate()
