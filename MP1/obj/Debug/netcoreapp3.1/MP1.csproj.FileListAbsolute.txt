@@ -1,0 +1,4 @@
+C:\Users\angus\Desktop\UBC\CPEN 223\MP1\MP1\obj\Debug\netcoreapp3.1\MP1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\angus\Desktop\UBC\CPEN 223\MP1\MP1\obj\Debug\netcoreapp3.1\MP1.AssemblyInfoInputs.cache
+C:\Users\angus\Desktop\UBC\CPEN 223\MP1\MP1\obj\Debug\netcoreapp3.1\MP1.AssemblyInfo.cs
+C:\Users\angus\Desktop\UBC\CPEN 223\MP1\MP1\obj\Debug\netcoreapp3.1\MP1.csproj.CoreCompileInputs.cache
