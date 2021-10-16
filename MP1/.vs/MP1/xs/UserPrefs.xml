@@ -1,14 +1,16 @@
 ﻿<Properties StartupConfiguration="{50227781-F16F-41EB-9350-2C0D2BA89991}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="XMLValidator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XMLTag.cs">
     <Files>
-      <File FileName="XMLValidator.cs" Line="19" Column="14" />
+      <File FileName="XMLValidator.cs" Line="36" Column="21" />
+      <File FileName="ValidatorMain.cs" Line="1" Column="1" />
+      <File FileName="XMLTag.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MP1" expanded="True">
             <Node name="MP1" expanded="True">
-              <Node name="XMLValidator.cs" selected="True" />
+              <Node name="XMLTag.cs" selected="True" />
             </Node>
           </Node>
         </State>
