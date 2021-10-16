@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{50227781-F16F-41EB-9350-2C0D2BA89991}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XMLValidator.cs">
+    <Files>
+      <File FileName="XMLValidator.cs" Line="19" Column="14" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MP1" expanded="True">
+            <Node name="MP1" expanded="True">
+              <Node name="XMLValidator.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MP1 PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
