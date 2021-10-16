@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\angus\\Desktop\\UBC\\CPEN 223\\MP1\\MP1\\MP1.csproj": {}
+    "C:\\Users\\Dave\\Documents\\MP1\\MP1\\MP1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\angus\\Desktop\\UBC\\CPEN 223\\MP1\\MP1\\MP1.csproj": {
+    "C:\\Users\\Dave\\Documents\\MP1\\MP1\\MP1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angus\\Desktop\\UBC\\CPEN 223\\MP1\\MP1\\MP1.csproj",
+        "projectUniqueName": "C:\\Users\\Dave\\Documents\\MP1\\MP1\\MP1.csproj",
         "projectName": "MP1",
-        "projectPath": "C:\\Users\\angus\\Desktop\\UBC\\CPEN 223\\MP1\\MP1\\MP1.csproj",
-        "packagesPath": "C:\\Users\\angus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angus\\Desktop\\UBC\\CPEN 223\\MP1\\MP1\\obj\\",
+        "projectPath": "C:\\Users\\Dave\\Documents\\MP1\\MP1\\MP1.csproj",
+        "packagesPath": "C:\\Users\\Dave\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dave\\Documents\\MP1\\MP1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\angus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dave\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
