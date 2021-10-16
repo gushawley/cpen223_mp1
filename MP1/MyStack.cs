@@ -64,7 +64,7 @@ namespace XMLValidatorNS
         {
             if(stackInternal.Count == 0)
             {
-                return true
+                return true;
             }
             else
             {
