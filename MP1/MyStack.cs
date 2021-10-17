@@ -24,6 +24,7 @@ namespace XMLValidatorNS
         /// </summary>
         public MyStack()
         {
+            //creates a stack.
             this.stackInternal = new List<XMLTag>();
         }
 
@@ -32,6 +33,7 @@ namespace XMLValidatorNS
         /// </summary>
         public void Push(XMLTag tag)
         {
+            //adds a tag to the stack
             stackInternal.Add(tag);
         }
 
@@ -41,6 +43,13 @@ namespace XMLValidatorNS
         /// </summary>
         public XMLTag Pop()
         {
+            //if stack is empty, throw ArgumentException.
+            if (stackInternal == null)
+            {
+                throw new ArgumentException("Stack is empty.");
+            }
+
+            //removes the top most tag on the stack.
             XMLTag temp = stackInternal[stackInternal.Count - 1];
             stackInternal.RemoveAt(stackInternal.Count - 1);
             return temp;
@@ -53,7 +62,14 @@ namespace XMLValidatorNS
         /// </summary>
         public XMLTag Peek()
         {
-            return stackInternal[stackInternal.Count - 1]; // return a dummy value for now: ToFix
+            //if stack is empty, throw ArgumentException.
+            if (stackInternal == null)
+            {
+                throw new ArgumentException("Stack is empty.");
+            }
+
+            //returns the tag at the top of the stack without removing it.
+            return stackInternal[stackInternal.Count - 1];
         }
 
         /// <summary>
@@ -62,6 +78,7 @@ namespace XMLValidatorNS
         /// </summary>
         public bool IsEmpty()
         {
+            //checks if stack is empty.
             if(stackInternal.Count == 0)
             {
                 return true;
