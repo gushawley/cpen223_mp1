@@ -28,7 +28,12 @@ namespace XMLValidatorNS
 
         public void AddTag(XMLTag tag)
         {
-            
+            if (tag == null)
+            {
+                throw new ArgumentException("No tag to add.");
+            }
+
+            tags.Enqueue(tag);
         }
 
         public string GetTags() 
