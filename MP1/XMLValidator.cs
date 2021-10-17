@@ -116,7 +116,8 @@ namespace XMLValidatorNS
 
             if (tags.Count == 0)
             {
-                Console.WriteLine("file not be found");
+                // return file not found if there is no tag
+                Console.WriteLine("File not found."); 
             }
 
             // loop through the queue exactly once
