@@ -86,10 +86,12 @@ namespace XMLValidatorNS
             //hold number of elements in queue in a seperate variable to be held constant
             int startCount = tags.Count;
             
-            //
+            //loop through all 'XMLTag's in the queue
             for (int i = 0; i < startCount; i++)
             {
+                //dequeue each tag
                 XMLTag tempTag = tags.Dequeue();
+                //only add it back to the main queue if it is not equal to passed element
                 if (tempTag.GetElement() != element && tempTag.ToString().Replace(" ","") != element)
                 {
                     tags.Enqueue(tempTag);
@@ -98,41 +100,61 @@ namespace XMLValidatorNS
             }
         }
 
+        /// <summary>
+        /// prints tags in indented form;
+        /// checks for unexpected closing tags and unclosed opening tags;
+        /// prints error messages for invalid tags
+        /// </summary>
         public void Validate()
         {
+            //create a new stack to keep track of symmetrical opening and closing tags
             MyStack validateStack = new MyStack();
+            //create a variable to hold the length of tags so it can remain constant for the loop
             int tagsCount = tags.Count;
+            //create a new StringBuilder to hold the indentation for each printed line
             StringBuilder indentation = new StringBuilder();
 
+            // loop through the queue exactly once
             for (int i = 0; i < tagsCount; i++)
             {
+                //dequeue each tag in the queue
                 XMLTag tempTag = tags.Dequeue();
+
+                //if the current tag is self-closing, print the tag and its indentation
                 if (tempTag.IsSelfClosing())
                 {
                     Console.WriteLine($"{indentation.ToString()}{tempTag.ToString().Replace(" ", "")}");
                 }
+                //if the current tag is an opening tag, print the tag, push it to the stack, and increase the indentation
                 else if (tempTag.GetIsOpenTag() && !tempTag.IsSelfClosing())
                 {
                     Console.WriteLine($"{indentation.ToString()}{tempTag.ToString().Replace(" ", "")}");
                     validateStack.Push(tempTag);
                     indentation.Append("   ");
                 }
+                //if the current tag is a closing tag...
                 else if (!tempTag.GetIsOpenTag() && !tempTag.IsSelfClosing())
                 {
+                    //and it is the same element as the tag at the top of the stack...
                     if (tempTag.GetElement() == validateStack.Peek().GetElement())
                     {
+                        //decrease the indentation by one, print the tag and its indentation,
+                        //and pop its counterpart from the stack
                         indentation.Remove(0, 3);
                         Console.WriteLine($"{indentation.ToString()}{tempTag.ToString().Replace(" ", "")}");
                         validateStack.Pop();
                         
                     }
+                    //if it does not match the element at the top of the stack, print an error message
                     else
                     {
                         Console.WriteLine($"Unexpected tag error: {tempTag.ToString().Replace(" ", "")}");
                     }
                 }
+                //add the current tag back to the queue
                 tags.Enqueue(tempTag);
             }
+            // if there are any tags left in the stack, print them with an error message
             while (!validateStack.IsEmpty())
             {
                 Console.WriteLine($"Unclosed tag error: {validateStack.Pop().ToString().Replace(" ", "")}");
