@@ -57,14 +57,12 @@ namespace XMLValidatorNS
             for (int i = 0; i < startCount; i++)
             {
                 XMLTag tempTag = tags.Dequeue();
-                if (tempTag.GetElement() != element)
+                if (tempTag.GetElement() != element && tempTag.ToString() != element)
                 {
                     tags.Enqueue(tempTag);
                 }
                 
             }
-            
-
         }
 
         public void Validate()
