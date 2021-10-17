@@ -145,7 +145,7 @@ namespace XMLValidatorNS
                         validateStack.Pop();
                         
                     }
-                    //if it does not match the element at the top of the stack, print an error message
+                    //and it does not match the element at the top of the stack, print an error message
                     else
                     {
                         Console.WriteLine($"Unexpected tag error: {tempTag.ToString().Replace(" ", "")}");
