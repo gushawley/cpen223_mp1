@@ -31,7 +31,7 @@ namespace XMLValidatorNS
         /// <param name="tags">Queue of type XMLTag to be used by XMLValidator</param>
         public XMLValidator(Queue<XMLTag> tags)
         {
-            this.tags = new Queue<XMLTag>(tags.ToArray());
+            this.tags = new Queue<XMLTag>(tags.ToArray()); //from MS documentation for Queue<T>.ToArray
             
         }
 
@@ -100,7 +100,42 @@ namespace XMLValidatorNS
 
         public void Validate()
         {
- 
+            MyStack validateStack = new MyStack();
+            int tagsCount = tags.Count;
+            StringBuilder indentation = new StringBuilder();
+
+            for (int i = 0; i < tagsCount; i++)
+            {
+                XMLTag tempTag = tags.Dequeue();
+                if (tempTag.IsSelfClosing())
+                {
+                    Console.WriteLine($"{indentation.ToString()}{tempTag.ToString().Replace(" ", "")}");
+                }
+                else if (tempTag.GetIsOpenTag() && !tempTag.IsSelfClosing())
+                {
+                    Console.WriteLine($"{indentation.ToString()}{tempTag.ToString().Replace(" ", "")}");
+                    validateStack.Push(tempTag);
+                    indentation.Append("   ");
+                }
+                else if (!tempTag.GetIsOpenTag() && !tempTag.IsSelfClosing())
+                {
+                    if (tempTag.IsEqual(validateStack.Peek()))
+                    {
+                        Console.WriteLine($"{indentation.ToString()}{tempTag.ToString().Replace(" ", "")}");
+                        validateStack.Pop();
+                        indentation.Remove(0, 3);
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Unexpected tag error: {tempTag.ToString().Replace(" ", "")}");
+                    }
+                }
+            }
+            while (!validateStack.IsEmpty())
+            {
+                Console.WriteLine($"Unclosed tag error: {validateStack.Pop().ToString().Replace(" ", "")}");
+            }
+
         }
 
     }
