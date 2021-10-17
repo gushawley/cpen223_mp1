@@ -114,6 +114,11 @@ namespace XMLValidatorNS
             //create a new StringBuilder to hold the indentation for each printed line
             StringBuilder indentation = new StringBuilder();
 
+            if (tags.Count == 0)
+            {
+                Console.WriteLine("file not be found");
+            }
+
             // loop through the queue exactly once
             for (int i = 0; i < tagsCount; i++)
             {
