@@ -52,7 +52,19 @@ namespace XMLValidatorNS
 
         public void Remove(string element)
         {
- 
+            int startCount = tags.Count;
+            
+            for (int i = 0; i < startCount; i++)
+            {
+                XMLTag tempTag = tags.Dequeue();
+                if (tempTag.GetElement() != element)
+                {
+                    tags.Enqueue(tempTag);
+                }
+                
+            }
+            
+
         }
 
         public void Validate()
