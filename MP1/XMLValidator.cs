@@ -119,17 +119,19 @@ namespace XMLValidatorNS
                 }
                 else if (!tempTag.GetIsOpenTag() && !tempTag.IsSelfClosing())
                 {
-                    if (tempTag.IsEqual(validateStack.Peek()))
+                    if (tempTag.GetElement() == validateStack.Peek().GetElement())
                     {
+                        indentation.Remove(0, 3);
                         Console.WriteLine($"{indentation.ToString()}{tempTag.ToString().Replace(" ", "")}");
                         validateStack.Pop();
-                        indentation.Remove(0, 3);
+                        
                     }
                     else
                     {
                         Console.WriteLine($"Unexpected tag error: {tempTag.ToString().Replace(" ", "")}");
                     }
                 }
+                tags.Enqueue(tempTag);
             }
             while (!validateStack.IsEmpty())
             {
