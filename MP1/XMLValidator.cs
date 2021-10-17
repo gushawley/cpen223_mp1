@@ -38,7 +38,16 @@ namespace XMLValidatorNS
 
         public string GetTags() 
         {
-            return null; // return a dummy value for now
+            StringBuilder tagString = new StringBuilder();
+            tagString.Append("front [ ");
+            for (int i = 0; i < tags.Count; i++)
+            {
+                XMLTag tempTag = tags.Dequeue();
+                tagString.Append(tempTag.ToString());
+                tags.Enqueue(tempTag);
+            }
+            tagString.Append(" ] back");
+            return tagString.ToString();
         }
 
         public void Remove(string element)
