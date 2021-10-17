@@ -136,7 +136,7 @@ namespace XMLValidatorNS
                 else if (!tempTag.GetIsOpenTag() && !tempTag.IsSelfClosing())
                 {
                     //and it is the same element as the tag at the top of the stack...
-                    if (tempTag.GetElement() == validateStack.Peek().GetElement())
+                    if (!validateStack.IsEmpty() && tempTag.GetElement() == validateStack.Peek().GetElement())
                     {
                         //decrease the indentation by one, print the tag and its indentation,
                         //and pop its counterpart from the stack

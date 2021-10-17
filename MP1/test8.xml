@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- example from spec -->
+<doc>
+   <assembly>
+      <name>Point
+   </assembly>
+   </assembly>
+   <member name="T:Graphics.Point">
+      <summary>Class <c>Point</c> models a point in a two-dimensional plane.
+      </summary>
+   </member>
+   <member name="M:Graphics.Point.Move(System.Int32,System.Int32)">
+      <summary>This method changes the point's location to the given coordinates.
+      <para /> We ignore other possible members in this example. </summary>
+      <param><c>xor</c> is the new x-coordinate.</param>
+      <param><c>yor</c> is the new y-coordinate.</param>
+      <see cref="M:Graphics.Point.Translate(System.Int32,System.Int32)"/>
+</doc>
