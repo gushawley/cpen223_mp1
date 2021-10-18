@@ -1,17 +1,3 @@
-C:/Users/angus/Desktop/UBC/CPEN 223/MP1/MP1/obj/Debug/netcoreapp3.1/MP1.GeneratedMSBuildEditorConfig.editorconfig
-C:/Users/angus/Desktop/UBC/CPEN 223/MP1/MP1/obj/Debug/netcoreapp3.1/MP1.AssemblyInfoInputs.cache
-C:/Users/angus/Desktop/UBC/CPEN 223/MP1/MP1/obj/Debug/netcoreapp3.1/MP1.AssemblyInfo.cs
-C:/Users/angus/Desktop/UBC/CPEN 223/MP1/MP1/obj/Debug/netcoreapp3.1/MP1.csproj.CoreCompileInputs.cache
-C:/Users/angus/Desktop/UBC/CPEN 223/MP1/MP1/bin/Debug/netcoreapp3.1/MP1.exe
-C:/Users/angus/Desktop/UBC/CPEN 223/MP1/MP1/bin/Debug/netcoreapp3.1/MP1.deps.json
-C:/Users/angus/Desktop/UBC/CPEN 223/MP1/MP1/bin/Debug/netcoreapp3.1/MP1.runtimeconfig.json
-C:/Users/angus/Desktop/UBC/CPEN 223/MP1/MP1/bin/Debug/netcoreapp3.1/MP1.runtimeconfig.dev.json
-C:/Users/angus/Desktop/UBC/CPEN 223/MP1/MP1/bin/Debug/netcoreapp3.1/MP1.dll
-C:/Users/angus/Desktop/UBC/CPEN 223/MP1/MP1/bin/Debug/netcoreapp3.1/MP1.pdb
-C:/Users/angus/Desktop/UBC/CPEN 223/MP1/MP1/obj/Debug/netcoreapp3.1/MP1.dll
-C:/Users/angus/Desktop/UBC/CPEN 223/MP1/MP1/obj/Debug/netcoreapp3.1/MP1.pdb
-C:/Users/angus/Desktop/UBC/CPEN 223/MP1/MP1/obj/Debug/netcoreapp3.1/MP1.genruntimeconfig.cache
-C:/Users/angus/Desktop/UBC/CPEN 223/MP1/MP1/obj/Debug/netcoreapp3.1/MP1.csproj.AssemblyReference.cache
 /Users/gm/Documents/GitHub/cpen223_mp1/MP1/bin/Debug/netcoreapp3.1/MP1.deps.json
 /Users/gm/Documents/GitHub/cpen223_mp1/MP1/bin/Debug/netcoreapp3.1/MP1.runtimeconfig.json
 /Users/gm/Documents/GitHub/cpen223_mp1/MP1/bin/Debug/netcoreapp3.1/MP1.runtimeconfig.dev.json
@@ -25,3 +11,16 @@ C:/Users/angus/Desktop/UBC/CPEN 223/MP1/MP1/obj/Debug/netcoreapp3.1/MP1.csproj.A
 /Users/gm/Documents/GitHub/cpen223_mp1/MP1/obj/Debug/netcoreapp3.1/MP1.dll
 /Users/gm/Documents/GitHub/cpen223_mp1/MP1/obj/Debug/netcoreapp3.1/MP1.pdb
 /Users/gm/Documents/GitHub/cpen223_mp1/MP1/obj/Debug/netcoreapp3.1/MP1.genruntimeconfig.cache
+C:\Users\angus\Desktop\UBC\CPEN 223\MP1\MP1\bin\Debug\netcoreapp3.1\MP1.exe
+C:\Users\angus\Desktop\UBC\CPEN 223\MP1\MP1\bin\Debug\netcoreapp3.1\MP1.deps.json
+C:\Users\angus\Desktop\UBC\CPEN 223\MP1\MP1\bin\Debug\netcoreapp3.1\MP1.runtimeconfig.json
+C:\Users\angus\Desktop\UBC\CPEN 223\MP1\MP1\bin\Debug\netcoreapp3.1\MP1.runtimeconfig.dev.json
+C:\Users\angus\Desktop\UBC\CPEN 223\MP1\MP1\bin\Debug\netcoreapp3.1\MP1.dll
+C:\Users\angus\Desktop\UBC\CPEN 223\MP1\MP1\bin\Debug\netcoreapp3.1\MP1.pdb
+C:\Users\angus\Desktop\UBC\CPEN 223\MP1\MP1\obj\Debug\netcoreapp3.1\MP1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\angus\Desktop\UBC\CPEN 223\MP1\MP1\obj\Debug\netcoreapp3.1\MP1.AssemblyInfoInputs.cache
+C:\Users\angus\Desktop\UBC\CPEN 223\MP1\MP1\obj\Debug\netcoreapp3.1\MP1.AssemblyInfo.cs
+C:\Users\angus\Desktop\UBC\CPEN 223\MP1\MP1\obj\Debug\netcoreapp3.1\MP1.csproj.CoreCompileInputs.cache
+C:\Users\angus\Desktop\UBC\CPEN 223\MP1\MP1\obj\Debug\netcoreapp3.1\MP1.dll
+C:\Users\angus\Desktop\UBC\CPEN 223\MP1\MP1\obj\Debug\netcoreapp3.1\MP1.pdb
+C:\Users\angus\Desktop\UBC\CPEN 223\MP1\MP1\obj\Debug\netcoreapp3.1\MP1.genruntimeconfig.cache

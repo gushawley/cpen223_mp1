@@ -31,7 +31,20 @@ namespace XMLValidatorNS
         /// <param name="tags">Queue of type XMLTag to be used by XMLValidator</param>
         public XMLValidator(Queue<XMLTag> tags)
         {
-            this.tags = new Queue<XMLTag>(tags.ToArray()); //from MS documentation for Queue<T>.ToArray
+            //this.tags = new Queue<XMLTag>(tags.ToArray()); //from MS documentation for Queue<T>.ToArray
+
+            //instantiate tags queue
+            this.tags = new Queue<XMLTag>();
+            //create a variable to hold the number of elements in the passed queue
+            int startCount = tags.Count;
+
+            //loop through the passed queue exactly once and enqueue each tag in the tags queue
+            for(int i = 0; i < startCount; i++)
+            {
+                XMLTag tempTag = tags.Dequeue();
+                this.tags.Enqueue(tempTag);
+                tags.Enqueue(tempTag);
+            }
             
         }
 
