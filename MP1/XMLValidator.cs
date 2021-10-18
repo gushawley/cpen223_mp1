@@ -83,7 +83,7 @@ namespace XMLValidatorNS
                 tagString.Append(tempTag.ToString());
                 tags.Enqueue(tempTag);
             }
-            tagString.Append(" ] back");
+            tagString.Append("] back");
             return tagString.ToString();
         }
 
